@@ -1,8 +1,18 @@
+@charset "UTF-8";
+
+
 /* Estilos globais */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
-    font-family: 'Arial Black', sans-serif;
-    background: url('./img/gta6_background.jpg') no-repeat center/cover;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0444bb, #932dc2);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -45,10 +55,11 @@ body {
 
 /* Imagens das postagens */
 .post img {
-  width: 20%;
-  height: auto;
-  margin-right: 20px;
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
 }
+
 /* Sessão do mago dos games */
 .game-wizard {
     display: flex;
@@ -103,19 +114,6 @@ body {
     background: linear-gradient(90deg, #ff4081, #fbc02d, #69f0ae);
 }
 
-/* Footer com fundo semi-transparente e texto em negrito */
-.footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 0.6250em;
-}
-
 /* Link dentro da seção do mago dos games */
 .wizard-link {
     color: #ba68c8;
@@ -125,4 +123,18 @@ body {
 
 .wizard-link:hover {
     text-decoration: underline;
+}
+
+/* Footer com fundo semi-transparente e texto em negrito */
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.6250em;
 }
